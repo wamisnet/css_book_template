@@ -1,0 +1,85 @@
+/* 吹き出し */
+
+.balloon_l,
+.balloon_r {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  page-break-inside: avoid;
+}
+
+.balloon_l .faceicon_l_bg,
+.balloon_r .faceicon_r_bg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #aeaeae 2px solid;
+}
+
+.balloon_l .faceicon_l_bg {
+  float: left;
+  margin-right: -90px;
+}
+
+.balloon_r .faceicon_r_bg {
+  float: right;
+  margin-right: 10px;
+}
+
+.balloon_l .faceicon_l,
+.balloon_r .faceicon_r {
+  clip-path: circle(30px at 30px 30px);
+}
+
+.balloon_l .faceicon_l img,
+.balloon_r .faceicon_r img {
+  width: 60px;
+  height: 60px;
+}
+
+.says_l,
+.says_r {
+  line-height: 1.5em;
+  max-width: 300px;
+  font-family: $font-family;
+  display: inline-block;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  border-radius: 12px;
+}
+
+.says_l {
+  float: left;
+  margin: 5px 0px 5px 80px;
+  /* 吹き出しの背景色 */
+  background: #e6e6e6;
+}
+
+.says_l:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: -22px;
+  border: 12px solid transparent;
+  /* 三角形の色 */
+  border-right: 12px solid #e6e6e6;
+}
+
+.says_r {
+  float: right;
+  margin: 5px 15px 5px 0px;
+  /* 吹き出しの背景色 */
+  background: #f0f0f0;
+}
+
+.says_r:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  right: -22px;
+  border: 12px solid transparent;
+  /* 三角形の色 */
+  border-left: 12px solid #f0f0f0;
+}

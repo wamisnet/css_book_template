@@ -1,0 +1,34 @@
+/* 奥付 */
+
+section#colophon {
+  position: relative;
+  float-reference: page;
+  float: bottom;
+  margin-bottom: 0;
+
+  ul.editions {
+    padding: 0;
+    list-style: none;
+    time {
+      display: inline-block;
+      width: 10em;
+    }
+  }
+
+  table.info {
+    margin: 0;
+    width: 100%;
+    border-top: 2px solid currentColor;
+    tr {
+      border: 0;
+      box-shadow: none;
+    }
+    tr:last-child {
+      border-bottom: 1px solid currentColor;
+    }
+    td {
+      vertical-align: top;
+      padding-left: 0;
+    }
+  }
+}

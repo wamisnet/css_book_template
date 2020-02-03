@@ -1,0 +1,11 @@
+@import './variables.scss';
+/* 表紙 */
+#cover {
+  break-after: page;
+
+  @media print {
+    & {
+      color: $color_white;
+    }
+  }
+}

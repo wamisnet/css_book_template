@@ -1,0 +1,30 @@
+/* profile */
+
+section#profile {
+  .author {
+    display: flex;
+    margin: 2rem 0;
+    img {
+      margin: 0 10px 8px 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }
+  }
+
+  code {
+    margin: 0 0 0 .5em;
+    & > i {
+      vertical-align: -.03em;
+      margin-right: .4em;
+    }
+  }
+
+  .profile {
+    flex-grow: 1;
+    h4 {
+      display: inline-block;
+      margin: 0 0 4px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* 問題と答え */
+
+div.page-bleak-inside {
+  page-break-inside: avoid;
+}
+
+.question,
+.answer {
+  display: block;
+  position: relative;
+  margin: 30px 0px 30px 0px;
+  padding: 40px 15px 15px 15px;
+  border-radius: 8px;
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: slice;
+}
+
+.question .question-title,
+.answer .answer-title {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  padding: 0px 10px 0px 10px;
+  font-size: 1.1em;
+  width: auto;
+  height: 1.7em;
+  line-height: 1.7em;
+  border-radius: 4px 0px 8px 0px;
+}
+
+.question p,
+.answer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.question pre.list,
+.question pre.emlist,
+.answer pre.list,
+.answer pre.emlist {
+  margin: 0px;
+}
+
+.question div.caption-code p.caption,
+.answer div.caption-code p.caption {
+  margin: 10px 0px 0px 0px;
+}
+
+/* 問題 */
+
+.question {
+  border: double 4px #808080;
+}
+
+.question .question-title {
+  color: #ffffff;
+  background: #a2a2a2;
+}
+
+/* 答え */
+
+.answer {
+  border: dotted 2px #808080;
+}
+
+.answer .answer-title {
+  color: $color_page_text;
+  background: #ffffff;
+  border-right: dotted 2px #808080;
+  border-bottom: dotted 2px #808080;
+}

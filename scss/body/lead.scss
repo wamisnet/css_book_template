@@ -1,0 +1,21 @@
+/* リード文 */
+
+div.lead {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border-top: dashed 2px $color_gray;
+  border-bottom: dashed 2px $color_gray;
+}
+
+div.lead p {
+  margin: 0;
+  padding: 0;
+}
+
+div.lead h1, div.lead h2, div.lead h3 {
+  padding: 0 0.5em 0 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.5em 0 0.5em 0;
+}
+

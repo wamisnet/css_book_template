@@ -1,0 +1,20 @@
+/* コラム */
+
+div.column {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  border: dashed 2px $color_blue_dark;
+}
+
+div.column p {
+  margin: 0;
+  padding: 0;
+}
+
+div.column h1, div.column h2, div.column h3 {
+  padding: 0 0.5em 0 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.5em 0 0.5em 0;
+}
+
