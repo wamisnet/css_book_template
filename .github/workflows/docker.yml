@@ -19,7 +19,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build
       run: |
-        docker-compose run --rm app npm i　--no-optional
+        docker-compose run --rm app npm i --no-optional
         docker-compose run --rm app npm run build-docker
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
